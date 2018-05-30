@@ -1,0 +1,8 @@
+function calculateBillTotal(subTotal) {
+  var tax = subTotal * 0.095;
+  var tip = subTotal * 0.15;
+  var grandTotal = subTotal + tax + tip;
+  return grandTotal;
+}
+var output = calculateBillTotal(20)
+console.log(output);
